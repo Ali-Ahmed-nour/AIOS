@@ -51,7 +51,7 @@ llms:
 
 
   log_mode: "console"
-  use_context_manager: false
+  use_context_manager: TRUE
 
 memory:
   log_mode: "console"
@@ -62,10 +62,11 @@ storage:
 
 scheduler:
   log_mode: "console"
+  strategy: "round_robin"  # أو "fifo" إذا كنت تريد اختبار كلا الاستراتيجيتين
 
 agent_factory:
   log_mode: "console"
-  max_workers: 64  
+  max_workers: 250  
   
 server:
   host: "localhost"
