@@ -8,7 +8,7 @@ api_keys:
   anthropic: "" # Anthropic API key
   huggingface:
     auth_token: ""  # Your HuggingFace auth token for authorized models
-    cache_dir: ""   # Your cache directory for saving huggingface models
+    cache_dir: "/content/drive/MyDrive/AIOS/huggingface_cache"   # Your cache directory for saving huggingface models
 
 # LLM Configuration
 llms:
@@ -57,7 +57,7 @@ memory:
   log_mode: "console"
   
 storage:
-  root_dir: "root"
+  root_dir: "/content/drive/MyDrive/AIOS/root"
   use_vector_db: true
 
 scheduler:
@@ -66,8 +66,8 @@ scheduler:
 
 agent_factory:
   log_mode: "console"
-  max_workers: 250  
+  max_workers: 50  
   
 server:
-  host: "localhost"
+  host: "0.0.0.0"
   port: 8000
